@@ -6,6 +6,10 @@ def main():
 
 	args = sys.argv
 
+	if len(args) != 3:
+		print("Invalid arguments... Please provide the file with the list of images as the first argument and the base name for the output file as the second argument.")
+		return
+
 	input_name = args[1]
 	base_name = args[2]
 
